@@ -1,0 +1,21 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+          "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Jasmine Spec Runner</title>
+
+    <link rel="shortcut icon" type="image/png" href="/Content/jasmine/jasmine_favicon.png">
+   
+    @Styles.Render("~/Content/jasmine")
+    @RenderSection("head", required: false)
+</head>
+    <body>
+        @RenderBody()
+        @Scripts.Render("~/bundles/jasmine")
+        @Scripts.Render("~/bundles/samples")
+        @Scripts.Render("~/bundles/angular")
+        @Scripts.Render("~/bundles/app")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
